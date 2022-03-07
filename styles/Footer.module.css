@@ -1,0 +1,10 @@
+.footer{
+    margin-top: 6rem;
+    font-size: 1.4rem;
+}
+.subFooter{
+    background-color: #04301D;
+    padding: 3rem 14rem;
+    font-size: 1.4rem;
+    color: rgb(236, 223, 223);
+}
