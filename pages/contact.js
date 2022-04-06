@@ -1,14 +1,26 @@
+import React from 'react'
+import Head from 'next/dist/shared/lib/head'
+import Navbar from '../components/Navbar'
+import SlideShow from '../components/SlideShow'
+import { useMediaQuery, useTheme } from '@mui/material'
 
-import Head from 'next/Head'
+const contact = () => {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
-function contact() {
     return (
         <div>
             <Head>
-                <title>Contact Page</title>
-                <meta name='keyword' content='contact us' />
+                <title>About orisfina </title>
+                <meta name='keyword' content='about orisfina Bootcamp' />
+                <link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+
             </Head>
-            Contact Page
+        <Navbar isMobile={isMobile} />
+        <SlideShow />  
+           <h2>Welcome to About Page</h2>   
         </div>
     )
 }

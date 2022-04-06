@@ -5,10 +5,13 @@
  }
  
  .blogTitle{
+     display: inline-block;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.3;
+    color: #232425;
+    text-align: center;
  }
  .blogInfo{
      font-size: 1.2rem;
