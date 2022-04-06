@@ -1,0 +1,7 @@
+.followBtn{
+    display: flex;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1rem;
+    color: rgb(6, 44, 80);
+    text-decoration: underline;
+}

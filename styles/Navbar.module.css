@@ -1,25 +1,21 @@
-.nav{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 2rem 6em;
-    background-color: #fff;
-}
-.navmenuSection{
+.navbar{
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
-    padding: 0rem 1rem;
+    padding: 14px 80px;
+    background-color: #081F4A;
 }
-.navLink{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    color: #000;
-    font-weight: 500;
-    transition: 1s all ease;
-    cursor: pointer;
+
+
+.navbar_list{
+    
+    display: flex;
+    list-style: none;
+    margin-left: 30%;
+    color:white
 }
-.navLink:hover{
-    color: #0C5536;
+
+.navbar_listItem{
+     flex:0 0 auto;
+    padding: 20px;
 }
+
