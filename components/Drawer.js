@@ -5,16 +5,16 @@ import {
   List,
   ListItem,
   ListItemButton,
-  ListItemIcon,
-  ListItemText,
+  Link as MUILink,
   Typography
 } from "@mui/material";
+import Link from 'next/link'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YoutubeIcon from '@mui/icons-material/Youtube';
 
 import MenuIcon from "@mui/icons-material/Menu";
-const pages = ["HOME", "CATEGORIES", "ABOUT", "CONTACT US"];
+const pages = [{name: 'HOME', url: '/'},{name: 'CATEGORIES', url: '/categories'},{name: 'ABOUT', url: '/about'},{name: 'CONTACT US', url: '/contact'}]
 
 
 
@@ -31,9 +31,11 @@ const DrawerComp = () => {
         <List sx={{width:"74vw", flexDirection:'column', display:'flex', alignItems:'center', my:'2rem'}} >
           {pages.map((page, index) => (
             <ListItemButton key={index}  >
-              <ListItemIcon>
-                <ListItemText fontFamily='montserrat' color='#333'>{page}</ListItemText>
-              </ListItemIcon>
+                <Link href={`${page.url}`} passHref>
+                         <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', textTransform:'uppercase', display:'inline-block', 
+                         pr:'2rem',
+                         fontWeight:'600'}}>{page.name}</MUILink>
+                    </Link>
             </ListItemButton>
           ))}
           <List sx={{display:'flex', alignItems:'center'}}>
