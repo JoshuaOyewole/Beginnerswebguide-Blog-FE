@@ -2,7 +2,7 @@ import React from 'react'
 import {Box, Grid, Link as MUILink, Typography, Button, useMediaQuery, useTheme} from '@mui/material'
 import Link from 'next/link'
 import Image from 'next/image'
-import Navbar from '../components/Navbar2'
+import NavBar from '../components/Navbar2'
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import MarkdownIt from 'markdown-it';
 import promoImg from '../public/images/freelance-bundle-podcast.jpg'
@@ -11,8 +11,7 @@ import BlogPost from '../components/Card'
 
 export default function Post({post}) {
   const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
 const md = new MarkdownIt();
 const htmlContent = md.render(post.attributes.content);
@@ -20,9 +19,16 @@ const htmlContent = md.render(post.attributes.content);
 const customHeaderJContent = isMobile ? 'center' : 'space-between'
 const customPr = isMobile ? '0rem' : '4rem;'
 
+/*GLOBAL STYLES TO OVERRIDE UL/OL
+ol,ul{
+  margin-left: 2rem;
+}
+*/
+
+
   return (
     <>
-    <Navbar />
+      <NavBar />
     <Box component='header' display='flex' id='#category' sx={{backgroundColor:'#1976D2', height: '10vh'}} px={{lg:'6rem'}} fontFamily='Poppins' mt={{xs:'1rem'}}>
         <Grid item xs={6} lg={5} component='ul' display='flex' justifyContent={customHeaderJContent} sx={{flexWrap:'wrap'}} alignItems='center'
         >
@@ -53,7 +59,7 @@ const customPr = isMobile ? '0rem' : '4rem;'
             </Grid>
     </Box>
           <Box component='article' px={{xs:1, sm: 3, lg:'8rem'}} width={{xs:'97%', sm:'95%', lg:'70%', xl:'70%'}}  m={{lg:'4rem auto', xs:'4rem auto'}} fontFamily='Poppins' lineHeight={1.8}>
-            <Typography variant='h4' textAlign='justify' component='h1' fontFamily='Poppins' fontWeight={700}>
+            <Typography variant='h4' textAlign='left' component='h1' fontFamily='Poppins' fontWeight={700}>
               {post.attributes.title}
             </Typography>
             {/* bg=D33A2C */}
@@ -115,7 +121,7 @@ const customPr = isMobile ? '0rem' : '4rem;'
       <Grid container columnSpacing={6} px={{xs: '1rem', lg:'18rem'}} rowSpacing={5}>
         {<>
           <BlogPost post={post} key={post.id} isMobile={true} />
-          <BlogPost post={post} key={post.id} isMobile={true} />
+          <BlogPost post={post} key={5} isMobile={true} />
         </>
         }
     </Grid>
@@ -131,14 +137,13 @@ const customPr = isMobile ? '0rem' : '4rem;'
 
 export async function getStaticProps({params}) {
   // Called my strapi API endpoint to get posts
-  const res = await fetch(`http://localhost:1337/api/posts/${params.id}`);
+  const res = await fetch(`http://localhost:1337/api/slugify/slugs/post/${params.slug}`);
 
-  const Blogposts = await res.json()
-
+  const Blogposts = await res.json();
   // By returning { props: { posts } }, the Blog component will receive `posts` as a prop at build time
   return {
     props: {
-      post:Blogposts.data,
+      post:Blogposts.data
     },
   }
 }
@@ -149,7 +154,7 @@ export async function getStaticPaths(){
   const Blogposts = await res.json()
 
     const paths = Blogposts.data.map((post) =>{
-      return {params:{id: post.id.toString()}}
+      return {params:{slug: post.attributes.slug}}
     });
   return{
     paths,

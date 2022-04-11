@@ -13,21 +13,25 @@ import DrawerComp from "./Drawer";
 import Link from 'next/link'
 
 const Header = () => {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState(0);
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   const customHeight = isMatch ? '0.7em' : '1em';
   const customWidth = isMatch ? '0.7em' : '1em';
   const customPR = isMatch ? '1rem' : '6rem';
-  const customPL = isMatch ? '3%' : '1%';
+  const customPL = isMatch ? '6%' : '8%';
   return (
     <React.Fragment>
       <AppBar sx={{ background: "#fff", color:"#141718", px:`${customPR}`}}  position='sticky'  >
         <Toolbar>
-          <WebhookIcon sx={{ transform: "scale(2)", width:`${customWidth}`, height:`${customHeight}` }} />
+        <Link href='/'>
+            <a style={{display:'flex', color:'#333', alignItems:'center'}}>
+            <WebhookIcon sx={{ transform: "scale(2)", width:`${customWidth}`, height:`${customHeight}` }} />
           <Typography sx={{ fontSize: "1.1rem", paddingLeft: `${customPL}`, fontWeight:'600' }}>
                 Beginnerswebguide
            </Typography>
+            </a>
+          </Link>
           
           {isMatch ? (
             <>
@@ -50,9 +54,9 @@ const Header = () => {
               <Tabs
                 sx={{ marginLeft: "auto", justifyContent:'center', alignItems:'center' }}
                 indicatorColor="secondary"
-                textColor="#000"
+                // textColor="#000"
                 value={value}
-                onChange={(e, value) => setValue(value)}
+                onChange={(e, value) => setValue(...value,e.target.value)}
               >
                   <Link href="/" passHref>
                          <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', textTransform:'uppercase', display:'inline-block', 

@@ -14,7 +14,7 @@ export default function Main({posts}) {
 
   return (
     <Grid item xs={12} lg={8} component='main' sx={{py:'0rem'}}>
-      <Typography component='h2' variant='h4' mb='2rem' color='#061942' fontWeight='bold'>Latest Articles</Typography>
+      <Typography component='h2' variant='h4' mb='2rem' color='#061942' fontWeight='600'>Latest Articles</Typography>
       <Grid container columnSpacing={6} rowSpacing={5}>
         {
           latestPosts.map((post) => {

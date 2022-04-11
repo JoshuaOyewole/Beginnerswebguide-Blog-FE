@@ -2,12 +2,10 @@ import React from 'react'
 import {Grid,useMediaQuery, useTheme } from '@mui/material'
 import Head from 'next/dist/shared/lib/head'
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
 import SlideShow from '../components/SlideShow'
 import Main from '../components/Main'
 import Aside from '../components/Aside'
 import NavBar from '../components/Navbar2'
-
 
 export default function index({posts}) {
     const theme = useTheme();
@@ -16,22 +14,21 @@ export default function index({posts}) {
   return (
     <>
         <Head>
-            <title>YouthfulBusiness</title>
+            <title>Beginnerswebguide</title>
             <meta name='keyword' content='YouthfulBusiness' />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Mulish:wght@400;700;800;900&family=Poppins:wght@400;600;800&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         </Head>
-
-        {/* <Navbar isMobile={isMobile} /> */}
+        
         <NavBar />
         <SlideShow />  
           <Grid container px={{xs:2, sm: 3, lg:'8rem'}} columnSpacing={8} my={10}>
             <Main posts={posts} />
             <Aside isMobile={isMobile}/>
         </Grid>
-       <Footer />
+       <Footer /> 
     </>
   )
 }

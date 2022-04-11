@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+p{
+  font-family: 'montserrat';
+  line-height: 2.5rem;
+}
 ul{
   list-style-type: none;
 }
@@ -25,4 +29,22 @@ aside p{
 aside h2{
   font-family: 'Poppins', sans-serif ;
   font-weight: 600;
+}
+.css-11yukd5-MuiTabs-indicator{
+  background-color: #fff;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'Poppins' !important;
+}
+.css-10hburv-MuiTypography-root{
+  font-family: 'montserrat';
+}
+.css-o69gx8-MuiCardMedia-root {
+  font-size: 1rem !important;
+  line-height: 1.63 !important;
 }

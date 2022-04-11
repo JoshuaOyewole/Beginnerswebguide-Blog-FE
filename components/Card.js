@@ -4,8 +4,10 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { Button, CardActionArea, CardActions,Typography,Grid} from '@mui/material';
 import Link from 'next/link'
+
+
 export default function BlogCard({isMobile,post}) {
-  
+  // console.log(post.attributes.slug);
   return (
 <Grid item xs={12} sm={6}>
     <Card >
@@ -17,7 +19,7 @@ export default function BlogCard({isMobile,post}) {
           alt="green iguana"
         />
         <CardContent>
-            <Link href={`/${post.id}`}>
+            <Link href={`/${post.attributes.slug}`}>
                 <a>   
                     <Typography gutterBottom variant="h5" color='#000' lineHeight={1.2}>
                        {post.attributes.title}
@@ -30,7 +32,7 @@ export default function BlogCard({isMobile,post}) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-          <Link href={`/${post.id}`}>
+          <Link href={`/${post.attributes.slug}`}>
               <a>
                 <Button size="small" color="primary" >
                     Read More
