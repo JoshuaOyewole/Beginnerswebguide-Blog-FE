@@ -14,7 +14,7 @@ export default function Aside({isMobile}) {
             <Typography component='p'>
                 I'm an online entrepreneur, blogging strategist, and online marketing specialist, here to help you start a blog the smart way, grow your audience and blog traffic, and earn money blogging.
             </Typography>
-            <Link href="/about" passHref>
+            <Link href="/about">
                 <Button variant="contained" sx={{mt:3, width:'100%'}}>
                     Read More..
                 </Button>
