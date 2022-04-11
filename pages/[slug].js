@@ -86,7 +86,7 @@ ol,ul{
                 <Typography fontFamily='Poppins' pt={{xs:'1rem', lg:2}}>
                 Use coupon STARTFREELANCING for 20% off The Complete Freelancing Bundle
                 </Typography>
-                <Link href='/'>
+                <Link href='/' passHref>
                 <Button variant='contained' size='large' sx={{fontFamily:'Poppins', marginTop:2}}>
                     Join 500+ students FREE
                 </Button>

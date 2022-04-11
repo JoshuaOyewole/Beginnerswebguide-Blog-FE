@@ -7,7 +7,7 @@ import Main from '../components/Main'
 import Aside from '../components/Aside'
 import NavBar from '../components/Navbar2'
 
-export default function index({posts}) {
+export default function Index({posts}) {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
