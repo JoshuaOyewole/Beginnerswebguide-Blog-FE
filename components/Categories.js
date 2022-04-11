@@ -8,28 +8,28 @@ export default function Categories() {
             <Typography component='h2' variant='h6' p='0rem 0 .5rem 0' color='#061942'fontWeight='600'>Categories</Typography>
             <Box component='ul' pl={0}  > 
             <Box component='li' sx={{my:'0.5rem'}}>
-                <Link href='/categories/webdevguides'>
+                <Link href='/categories/webdevguides' passHref>
                     <MUILink underline='hover' sx={{fontFamily: 'Poppins', color:'#333'}}>
                     Web Development Guides
                     </MUILink>
                 </Link>
             </Box>
-            <Box component='li' sx={{my:'0.5rem'}}>
-                <Link href='/categories/jslibraries-frameworks'>
+            <Box component='li' sx={{my:'0.5rem'}} >
+                <Link href='/categories/jslibraries-frameworks' passHref>
                     <MUILink underline='hover' sx={{fontFamily: 'Poppins', color:'#333'}}>
                         Javascript libraries / Frameworks
                     </MUILink>
                 </Link>
             </Box>
             <Box component='li' sx={{my:'0.5rem'}}>
-                <Link href='/categories/freelancing'>
+                <Link href='/categories/freelancing' passHref>
                     <MUILink underline='hover' sx={{fontFamily: 'Poppins', color:'#333'}}>
                     Freelancing
                     </MUILink>
                 </Link>
             </Box>
-            <Box component='li' sx={{my:'0.5rem'}}>
-                <Link href='/categories/setups'>
+            <Box component='li' sx={{my:'0.5rem'}} >
+                <Link href='/categories/setups' passHref>
                     <MUILink underline='hover' sx={{fontFamily: 'Poppins', color:'#333'}}>
                         Setups
                     </MUILink>

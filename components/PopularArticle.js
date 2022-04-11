@@ -11,28 +11,28 @@ export default function PopularArticle() {
         </Typography>
         <Box component='ul' pl={0}  > 
             <Box component='li' sx={{my:'0.8rem'}}>
-                <Link href='#'>
+                <Link href='#' passHref>
                     <MUILink underline='hover' sx={{fontFamily: 'Poppins', color:'#333'}}>
                     7 Things You MUST Do Before You Launch Your Blog
                     </MUILink>
                 </Link>
             </Box>
             <Box component='li' sx={{my:'0.8rem'}}>
-                <Link href='#'>
+                <Link href='#' passHref>
                     <MUILink underline='hover' sx={{fontFamily: 'Poppins', color:'#333'}}>
                     10+ Best WordPress Plugins for Blogs in 2022 (All FREE)
                     </MUILink>
                 </Link>
             </Box>
             <Box component='li' sx={{my:'0.8rem'}}>
-                <Link href='#'>
+                <Link href='#' passHref>
                     <MUILink underline='hover' sx={{fontFamily: 'Poppins', color:'#333'}}>
                     100+ Profitable Blog Niche Ideas That Make Money in 2022
                     </MUILink>
                 </Link>
             </Box>
             <Box component='li' sx={{my:'0.8rem'}}>
-                <Link href='#'>
+                <Link href='#' passHref>
                     <MUILink underline='hover' sx={{fontFamily: 'Poppins', color:'#333'}}>
                     How to Start a WordPress Blog on Bluehost in 2022: Step-by-Step Tutorial
 

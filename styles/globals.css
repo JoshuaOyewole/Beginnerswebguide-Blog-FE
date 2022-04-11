@@ -30,8 +30,8 @@ aside h2{
   font-family: 'Poppins', sans-serif ;
   font-weight: 600;
 }
-.css-11yukd5-MuiTabs-indicator{
-  background-color: #fff;
+.css-11yukd5-MuiTabs-indicator {
+  background-color: #fff !important;
 }
 img{
     width: 100%;
@@ -44,7 +44,8 @@ h1,h2,h3,h4,h5{
 .css-10hburv-MuiTypography-root{
   font-family: 'montserrat';
 }
-.css-o69gx8-MuiCardMedia-root {
+
+.css-13du7kb-MuiTypography-root {
   font-size: 1rem !important;
   line-height: 1.63 !important;
 }

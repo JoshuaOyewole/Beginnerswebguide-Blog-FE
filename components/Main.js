@@ -11,7 +11,7 @@ export default function Main({posts}) {
     useEffect(() => {
       setLatestPosts(posts.slice(0,20));
     }, [posts])
-
+    
   return (
     <Grid item xs={12} lg={8} component='main' sx={{py:'0rem'}}>
       <Typography component='h2' variant='h4' mb='2rem' color='#061942' fontWeight='600'>Latest Articles</Typography>

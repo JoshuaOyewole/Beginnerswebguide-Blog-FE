@@ -1,7 +1,29 @@
 import React from 'react'
+import Head from 'next/dist/shared/lib/head'
+import Navbar from '../../components/Navbar2'
+import SlideShow from '../../components/SlideShow'
+import { useMediaQuery, useTheme } from '@mui/material'
+import Footer from '../../components/Footer'
 
-export default function webdevguides () {
-  return (
-    <div>webdevguides Categories</div>
-  )
+export default function WebdevGuides(){
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
+    return (
+        <div>
+            <Head>
+                <title>Web Dev Guides Category | Beginnerwebguide </title>
+                <meta name='keyword' content='about orisfina Bootcamp' />
+                <link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+
+            </Head>
+        <Navbar isMobile={isMobile} />
+        <SlideShow />  
+           <h2>Web Dev Guides Category Category</h2>  
+           <Footer /> 
+        </div>
+    )
 }
+

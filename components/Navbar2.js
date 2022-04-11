@@ -24,7 +24,7 @@ const Header = () => {
     <React.Fragment>
       <AppBar sx={{ background: "#fff", color:"#141718", px:`${customPR}`}}  position='sticky'  >
         <Toolbar>
-        <Link href='/'>
+        <Link href='/' passHref>
             <a style={{display:'flex', color:'#333', alignItems:'center'}}>
             <WebhookIcon sx={{ transform: "scale(2)", width:`${customWidth}`, height:`${customHeight}` }} />
           <Typography sx={{ fontSize: "1.1rem", paddingLeft: `${customPL}`, fontWeight:'600' }}>
@@ -52,11 +52,10 @@ const Header = () => {
                 <Tab label="Contact" /> 
               </Tabs> */}
               <Tabs
-                sx={{ marginLeft: "auto", justifyContent:'center', alignItems:'center' }}
-                indicatorColor="secondary"
-                textColor="#000"
+                sx={{ marginLeft: "auto", justifyContent:'center', color:'#000', alignItems:'center' }}
+                indicatorColor="secondary" 
                 value={value}
-                onChange={(e, value) => setValue(value)}
+                onChange={(e) => setValue(e.target.value)}
               >
                   <Link href="/" passHref>
                          <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', textTransform:'uppercase', display:'inline-block', 
