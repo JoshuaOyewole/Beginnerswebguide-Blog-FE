@@ -1,6 +1,7 @@
 import React from 'react'
 import {Box, Grid, Link as MUILink, Typography, Button, useMediaQuery, useTheme} from '@mui/material'
 import Link from 'next/link'
+import Head from 'next/dist/shared/lib/head'
 import Image from 'next/image'
 import NavBar from '../components/Navbar2'
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
@@ -28,6 +29,10 @@ ol,ul{
 
   return (
     <>
+    <Head>
+                <title>{post.attributes.title} | beginnerswebguide.com</title>
+                <meta name='keyword' content='about orisfina Bootcamp' />
+            </Head>
       <NavBar />
     <Box component='header' display='flex' id='#category' sx={{backgroundColor:'#1976D2', height: '10vh'}} px={{lg:'6rem'}} fontFamily='Poppins' mt={{xs:'1rem'}}>
         <Grid item xs={6} lg={5} component='ul' display='flex' justifyContent={customHeaderJContent} sx={{flexWrap:'wrap'}} alignItems='center'
@@ -39,7 +44,7 @@ ol,ul{
             <Link href="/javascript" passHref>
                 <MUILink color='#edecec' underline='hover' >Javascript</MUILink>
             </Link>
-          </Box>
+          </Box>  
                 <Box component='li' sx={{pr:6, fontFamily:'Poppins'}}>
                     <Link href="/freelancing" passHref>
                          <MUILink color='#edecec' underline='hover'
@@ -145,6 +150,7 @@ export async function getStaticProps({params}) {
     props: {
       post:Blogposts.data
     },
+      revalidate: 1,
   }
 }
 

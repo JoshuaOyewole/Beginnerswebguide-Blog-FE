@@ -14,10 +14,6 @@ export default function About(){
             <Head>
                 <title>About orisfina </title>
                 <meta name='keyword' content='about orisfina Bootcamp' />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Mulish:wght@400;700;800;900&family=Poppins:wght@400;600;800&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
-                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
             </Head>
     <Navbar isMobile={isMobile} />

@@ -15,11 +15,6 @@ export default function Index(){
             <Head>
                 <title>Categories| Beginnerwebguide </title>
                 <meta name='keyword' content='about orisfina Bootcamp' />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600;800&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
             </Head>
         <Navbar isMobile={isMobile} />
         <SlideShow />  
@@ -27,16 +22,16 @@ export default function Index(){
         <h2>Welcome to Categories Section</h2>  
            <Box>
            <Link href="/categories/freelancing" passHref>
-              <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Freelancing</MUILink>
+              <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Freelancing</MUILink>
             </Link>
             <Link href="/categories/jslibraries-frameworks" passHref>
-              <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Js Libraries / Frameworks</MUILink>
+              <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Js Libraries / Frameworks</MUILink>
             </Link>
             <Link href="/categories/setups" passHref>
-              <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Setups</MUILink>
+              <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Setups</MUILink>
             </Link>
             <Link href="/categories/webdevguides" passHref>
-              <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Web Dev Guides</MUILink>
+              <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Web Dev Guides</MUILink>
             </Link>
            </Box>
         </Box>
