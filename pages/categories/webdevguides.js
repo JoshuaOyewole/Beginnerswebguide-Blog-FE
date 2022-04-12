@@ -14,9 +14,6 @@ export default function WebdevGuides(){
             <Head>
                 <title>Web Dev Guides Category | Beginnerwebguide </title>
                 <meta name='keyword' content='about orisfina Bootcamp' />
-                <link
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
 
             </Head>
         <Navbar isMobile={isMobile} />

@@ -12,9 +12,9 @@ export default function Aside({isMobile}) {
         <Box display= {isMobile ? 'none' : 'block'} component='section' >
             <Typography component='h2' variant='h6' p='0rem 0 1rem 0' color='#061942' fontWeight='600'>Hi, Welcome to BeginnersWebGuide</Typography>
             <Typography component='p'>
-                I'm an online entrepreneur, blogging strategist, and online marketing specialist, here to help you start a blog the smart way, grow your audience and blog traffic, and earn money blogging.
+                I&#39;m an online entrepreneur, blogging strategist, and online marketing specialist, here to help you start a blog the smart way, grow your audience and blog traffic, and earn money blogging.
             </Typography>
-            <Link href="/about">
+            <Link href="/about" passHref>
                 <Button variant="contained" sx={{mt:3, width:'100%'}}>
                     Read More..
                 </Button>

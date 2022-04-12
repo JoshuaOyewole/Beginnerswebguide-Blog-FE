@@ -32,7 +32,7 @@ const DrawerComp = () => {
           {pages.map((page, index) => (
             <ListItemButton key={index}  >
                 <Link href={`${page.url}`} passHref>
-                         <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', textTransform:'uppercase', display:'inline-block', 
+                         <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', textTransform:'uppercase', display:'inline-block', 
                          pr:'2rem',
                          fontWeight:'600'}}>{page.name}</MUILink>
                     </Link>

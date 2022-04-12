@@ -10,20 +10,17 @@ export default function About(){
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
     return (
-        <div>
+        <>
             <Head>
                 <title>About orisfina </title>
                 <meta name='keyword' content='about orisfina Bootcamp' />
-                <link
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
 
             </Head>
-        <Navbar isMobile={isMobile} />
+    <Navbar isMobile={isMobile} />
         <SlideShow />  
            <h2>Welcome to About Page</h2>  
-           <Footer /> 
-        </div>
+        <Footer />
+        </>
     )
 }
 

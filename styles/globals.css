@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 p{
-  font-family: 'montserrat';
+  font-family: 'Montserrat', sans-serif;
   line-height: 2.5rem;
 }
 ul{
@@ -39,10 +39,10 @@ img{
 }
 
 h1,h2,h3,h4,h5{
-  font-family: 'Poppins' !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 .css-10hburv-MuiTypography-root{
-  font-family: 'montserrat';
+  font-family: 'Montserrat', sans-serif;
 }
 .css-o69gx8-MuiCardMedia-root {
   font-size: 1rem !important;

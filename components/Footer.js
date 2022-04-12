@@ -15,7 +15,7 @@ export default function FooterSection() {
   return (
     <Box container
       component="footer"
-      sx={{ py: "1rem", backgroundColor: "#333", color: "#f4f4f4", fontFamily:'montserrat' }}
+      sx={{ py: "1rem", backgroundColor: "#333", color: "#f4f4f4", fontFamily:'Montserrat' }}
       px={{ xs: 3, sm: 4, md: "6rem" }}>
         <Grid container >
                 <Grid item xs={12} lg={6}  >
