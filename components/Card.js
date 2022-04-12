@@ -14,7 +14,7 @@ export default function BlogCard({isMobile,post}) {
         <CardMedia
           component="img"
           height="140"
-          image="/_next/static/media/01-blog.4a449b24.jpg"
+          image={`http://localhost:1337${post.attributes.imageURL}`}
           alt="green iguana"
         />
         <CardContent>

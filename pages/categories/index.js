@@ -15,10 +15,6 @@ export default function Index(){
             <Head>
                 <title>Categories| Beginnerwebguide </title>
                 <meta name='keyword' content='about orisfina Bootcamp' />
-                <link
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
-
             </Head>
         <Navbar isMobile={isMobile} />
         <SlideShow />  
@@ -26,16 +22,16 @@ export default function Index(){
         <h2>Welcome to Categories Section</h2>  
            <Box>
            <Link href="/categories/freelancing" passHref>
-              <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Freelancing</MUILink>
+              <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Freelancing</MUILink>
             </Link>
             <Link href="/categories/jslibraries-frameworks" passHref>
-              <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Js Libraries / Frameworks</MUILink>
+              <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Js Libraries / Frameworks</MUILink>
             </Link>
             <Link href="/categories/setups" passHref>
-              <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Setups</MUILink>
+              <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Setups</MUILink>
             </Link>
             <Link href="/categories/webdevguides" passHref>
-              <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Web Dev Guides</MUILink>
+              <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Web Dev Guides</MUILink>
             </Link>
            </Box>
         </Box>

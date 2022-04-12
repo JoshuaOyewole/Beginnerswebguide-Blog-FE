@@ -58,18 +58,18 @@ const Header = () => {
                 onChange={(e) => setValue(e.target.value)}
               >
                   <Link href="/" passHref>
-                         <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', textTransform:'uppercase', display:'inline-block', 
+                         <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', textTransform:'uppercase', display:'inline-block', 
                          pr:'2rem',
                          fontWeight:'600'}}>Home</MUILink>
                     </Link>
                     <Link href="/categories" passHref>
-                         <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', textTransform:'uppercase', display:'inline-block', pr:'2rem',fontWeight:'600'}}>Categories</MUILink>
+                         <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', textTransform:'uppercase', display:'inline-block', pr:'2rem',fontWeight:'600'}}>Categories</MUILink>
                     </Link>
                     <Link href="/about" passHref>
-                         <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', textTransform:'uppercase', display:'inline-block', pr:'2rem',fontWeight:'600'}}>About</MUILink>
+                         <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', textTransform:'uppercase', display:'inline-block', pr:'2rem',fontWeight:'600'}}>About</MUILink>
                     </Link>
                     <Link href="/contact" passHref>
-                         <MUILink color='#000' underline='hover' sx={{fontFamily:'montserrat', textTransform:'uppercase',  display:'inline-block', pr:'2rem',fontWeight:'600'}}>Contact Us</MUILink>
+                         <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', textTransform:'uppercase',  display:'inline-block', pr:'2rem',fontWeight:'600'}}>Contact Us</MUILink>
                     </Link>
               </Tabs>
               {/* <Button sx={{ marginLeft: "auto" }} variant="contained">
