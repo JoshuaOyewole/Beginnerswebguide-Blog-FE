@@ -11,7 +11,7 @@ import {
 import Link from 'next/link'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import YoutubeIcon from '@mui/icons-material/Youtube';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import MenuIcon from '@mui/icons-material/Menu';
 const pages = [{name: 'HOME', url: '/'},{name: 'CATEGORIES', url: '/categories'},{name: 'ABOUT', url: '/about'},{name: 'CONTACT US', url: '/contact'}]
 
@@ -42,7 +42,7 @@ const DrawerComp = () => {
              <Typography color='#212121' fontWeight='600'> Follow us on: </Typography> 
             <TwitterIcon color='#b71c1c' fontSize='medium' />
             <FacebookIcon color='primary' />
-            <YoutubeIcon color='#b71c1c' />
+            <YouTubeIcon color='#b71c1c' />
             </ListItem>
           </List>
          
