@@ -1,5 +1,5 @@
 import React from 'react'
-import Styles from '../styles/SlideShow.module.css'
+import Styles from '../styles/Slideshow.module.css'
 
 export default function SlideShow() {
 
