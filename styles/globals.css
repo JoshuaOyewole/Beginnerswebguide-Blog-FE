@@ -33,6 +33,9 @@ aside h2{
 .css-11yukd5-MuiTabs-indicator {
   background-color: #fff !important;
 }
+.css-1adpx3n-MuiTypography-root{
+  font-size: 1.5rem !important;
+}
 img{
     width: 100%;
     height: auto;
