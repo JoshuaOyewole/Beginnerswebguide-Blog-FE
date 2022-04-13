@@ -12,8 +12,7 @@ import Link from 'next/link'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YoutubeIcon from '@mui/icons-material/Youtube';
-
-import MenuIcon from "@mui/icons-material/Menu";
+import MenuIcon from '@mui/icons-material/Menu';
 const pages = [{name: 'HOME', url: '/'},{name: 'CATEGORIES', url: '/categories'},{name: 'ABOUT', url: '/about'},{name: 'CONTACT US', url: '/contact'}]
 
 
