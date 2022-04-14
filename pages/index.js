@@ -41,7 +41,7 @@ export default function Index({posts}) {
 // This function gets called at build time
 export async function getStaticProps() {
   // Called my strapi API endpoint to get posts
-  const res = await fetch('http://localhost:1337/api/posts');
+  const res = await fetch(`${process.env.API_URL}/api/articles`);
   const Blogposts = await res.json();
 
   // By returning { props: { posts } }, the Blog component will receive `posts` as a prop at build time

@@ -142,21 +142,21 @@ ol,ul{
 
 export async function getStaticProps({params}) {
   // Called my strapi API endpoint to get posts
-  const res = await fetch(`http://localhost:1337/api/slugify/slugs/post/${params.slug}`);
+  const res = await fetch(`${process.env.API_URL}/api/slugify/slugs/article/${params.slug}`);
 
   const Blogposts = await res.json();
   // By returning { props: { posts } }, the Blog component will receive `posts` as a prop at build time
+
   return {
     props: {
       post:Blogposts.data
-    },
-      revalidate: 1,
+    }
   }
 }
 
 
 export async function getStaticPaths(){
-  const res = await fetch('http://localhost:1337/api/posts')
+  const res = await fetch(`${process.env.API_URL}/api/articles`)
   const Blogposts = await res.json()
 
     const paths = Blogposts.data.map((post) =>{
