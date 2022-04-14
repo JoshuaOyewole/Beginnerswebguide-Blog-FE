@@ -14,7 +14,7 @@ export default function BlogCard({isMobile,post}) {
         <CardMedia
           component="img"
           height="140"
-          image={`http://localhost:1337${post.attributes.imageURL}`}
+          image= {`https://beginnerswebguide.herokuapp.com${post.attributes.imageURL}`}   //{post.attributes.imageURL}
           alt="green iguana"
         />
         <CardContent>

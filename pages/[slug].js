@@ -11,6 +11,7 @@ import FooterSection from '../components/FooterSection'
 import BlogPost from '../components/Card'
 
 export default function Post({post}) {
+
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -146,7 +147,6 @@ export async function getStaticProps({params}) {
 
   const Blogposts = await res.json();
   // By returning { props: { posts } }, the Blog component will receive `posts` as a prop at build time
-
   return {
     props: {
       post:Blogposts.data
