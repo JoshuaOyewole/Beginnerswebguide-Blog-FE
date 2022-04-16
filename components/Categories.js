@@ -10,28 +10,28 @@ export default function Categories() {
             <Box component='li' sx={{my:'0.5rem'}}>
                 <Link href='/categories/webdevguides' passHref>
                     <MUILink underline='hover' sx={{fontFamily: 'Poppins', color:'#333'}}>
-                    Web Development Guides
+                    &gt; Web Development Guides
                     </MUILink>
                 </Link>
             </Box>
             <Box component='li' sx={{my:'0.5rem'}} >
                 <Link href='/categories/jslibraries-frameworks' passHref>
                     <MUILink underline='hover' sx={{fontFamily: 'Poppins', color:'#333'}}>
-                        Javascript libraries / Frameworks
+                    &gt; Javascript libraries / Frameworks
                     </MUILink>
                 </Link>
             </Box>
             <Box component='li' sx={{my:'0.5rem'}}>
                 <Link href='/categories/freelancing' passHref>
                     <MUILink underline='hover' sx={{fontFamily: 'Poppins', color:'#333'}}>
-                    Freelancing
+                    &gt; Freelancing
                     </MUILink>
                 </Link>
             </Box>
             <Box component='li' sx={{my:'0.5rem'}} >
                 <Link href='/categories/setups' passHref>
                     <MUILink underline='hover' sx={{fontFamily: 'Poppins', color:'#333'}}>
-                        Setups
+                    &gt; Setups
                     </MUILink>
                 </Link>
             </Box>

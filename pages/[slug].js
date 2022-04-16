@@ -35,7 +35,7 @@ ol,ul{
                 <meta name='keyword' content='about orisfina Bootcamp' />
             </Head>
       <NavBar />
-    <Box component='header' display='flex' id='#category' sx={{backgroundColor:'#1976D2', height: '10vh'}} px={{lg:'6rem'}} fontFamily='Poppins' mt={{xs:'1rem'}}>
+    <Box component='header' display='flex' id='#category' sx={{backgroundColor:'#1976D2'}} px={{lg:'6rem'}} fontFamily='Poppins' mt={{xs:'1rem'}} py={{xs:'.7rem'}}>
         <Grid item xs={6} lg={5} component='ul' display='flex' justifyContent={customHeaderJContent} sx={{flexWrap:'wrap'}} alignItems='center'
         >
         <Box component='li' display='flex' sx={{pr:`${customPr}`, fontFamily:'Poppins', fontWeight: '600'}}>

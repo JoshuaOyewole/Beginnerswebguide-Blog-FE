@@ -15,7 +15,7 @@ export default function Index({posts}) {
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
     const font = createTheme({
       typography: {
-        fontFamily: "'Montserrat', sans-serif",
+        fontFamily: "'Poppins', sans-serif",
         fontSize: 16
       },
     });
@@ -29,7 +29,7 @@ export default function Index({posts}) {
         
         <NavBar />
         <SlideShow />  
-          <Grid container px={{xs:2, sm: 3, lg:'8rem'}} columnSpacing={8} my={10}>
+          <Grid container px={{xs:2, sm: 3, lg:'8rem', xl:'16rem'}} columnSpacing={8} my={10}>
             <Main posts={posts} />
             <Aside isMobile={isMobile}/>
         </Grid>

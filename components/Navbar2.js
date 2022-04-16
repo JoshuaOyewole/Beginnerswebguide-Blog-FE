@@ -16,18 +16,19 @@ const Header = () => {
   const [value, setValue] = useState(0);
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  const customHeight = isMatch ? '0.7em' : '1em';
-  const customWidth = isMatch ? '0.7em' : '1em';
-  const customPR = isMatch ? '1rem' : '6rem';
+  const customHeight = isMatch ? '0.5em' : '1em';
+  const customWidth = isMatch ? '0.5em' : '1em';
+  const customPR = isMatch ? '0rem' : '6rem';
   const customPL = isMatch ? '6%' : '8%';
+  const customFont = isMatch ? '1rem' : '1.1rem';
   return (
     <React.Fragment>
-      <AppBar sx={{ background: "#fff", color:"#141718", px:`${customPR}`}}  position='sticky'  >
+      <AppBar sx={{ background: "#fff", color:"#141718", px:`${customPR}`}} position='sticky'  >
         <Toolbar>
         <Link href='/' passHref>
             <a style={{display:'flex', color:'#333', alignItems:'center'}}>
             <WebhookIcon sx={{ transform: "scale(2)", width:`${customWidth}`, height:`${customHeight}` }} />
-          <Typography sx={{ fontSize: "1.1rem", paddingLeft: `${customPL}`, fontWeight:'600' }}>
+          <Typography sx={{ fontSize: `${customFont}`, paddingLeft: `${customPL}`, fontWeight:'600' }}>
                 Beginnerswebguide
            </Typography>
             </a>

@@ -3,32 +3,40 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Poppins', sans-serif !important;
+}
 p{
-  font-family: 'Montserrat', sans-serif;
   line-height: 2.5rem;
 }
 ul{
   list-style-type: none;
+  padding-inline-start: 20px;
+}
+ol{
+  padding-inline-start: 20px;
 }
 a{
   text-decoration: none;
 }
 nav a{
-  font-family: 'Montserrat', sans-serif;
   font-size: .9rem;
   text-transform: uppercase;
   font-weight: 600;
 }
 aside{
-  background-color: '#fff'
+  background-color: '#fff';
 }
 aside p{
-  font-family: 'Poppins', sans-serif !important;
-  color: #525252 !important;
+  color: #333 !important;
+  font-size: 1.05rem !important;
 }
 aside h2{
-  font-family: 'Poppins', sans-serif ;
   font-weight: 600;
+  font-size: 1.1rem !important;
+}
+aside a{
+  font-size: 1.05rem !important;
 }
 .MuiTabs-indicator .css-axpu1l {
   background-color: #fff !important;
@@ -43,11 +51,19 @@ img{
 
 h1,h2,h3,h4,h5{
   font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
 }
+
 .css-10hburv-MuiTypography-root{
   font-family: 'Montserrat', sans-serif;
 }
 .css-o69gx8-MuiCardMedia-root {
   font-size: 1rem !important;
   line-height: 1.63 !important;
+}
+
+@media (max-width:600px) {
+  h5{
+    font-size: 1.5rem !important;
+  }
 }
