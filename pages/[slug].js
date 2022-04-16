@@ -1,32 +1,18 @@
 import React from 'react'
-import {Box, Grid, Link as MUILink, Typography, Button, useMediaQuery, useTheme} from '@mui/material'
+import {Box, Grid, Link as MUILink, Typography, Button} from '@mui/material'
 import Link from 'next/link'
 import Head from 'next/dist/shared/lib/head'
 import Image from 'next/image'
 import NavBar from '../components/Navbar2'
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import MarkdownIt from 'markdown-it';
 import promoImg from '../public/images/freelance-bundle-podcast.jpg'
 import FooterSection from '../components/FooterSection'
 import BlogPost from '../components/Card'
+import Header from '../components/Header'
 
 export default function Post({post}) {
-
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-
 const md = new MarkdownIt();
 const htmlContent = md.render(post.attributes.content);
-
-const customHeaderJContent = isMobile ? 'center' : 'space-between'
-const customPr = isMobile ? '0rem' : '4rem;'
-
-/*GLOBAL STYLES TO OVERRIDE UL/OL
-ol,ul{
-  margin-left: 2rem;
-}
-*/
-
 
   return (
     <>
@@ -35,35 +21,7 @@ ol,ul{
                 <meta name='keyword' content='about orisfina Bootcamp' />
             </Head>
       <NavBar />
-    <Box component='header' display='flex' id='#category' sx={{backgroundColor:'#1976D2'}} px={{lg:'6rem'}} fontFamily='Poppins' mt={{xs:'1rem'}} py={{xs:'.7rem'}}>
-        <Grid item xs={6} lg={5} component='ul' display='flex' justifyContent={customHeaderJContent} sx={{flexWrap:'wrap'}} alignItems='center'
-        >
-        <Box component='li' display='flex' sx={{pr:`${customPr}`, fontFamily:'Poppins', fontWeight: '600'}}>
-            Quicklinks <ArrowRightIcon />
-        </Box>
-          <Box component='li' sx={{pr:6, fontFamily:'Poppins'}}>
-            <Link href="/javascript" passHref>
-                <MUILink color='#edecec' underline='hover' >Javascript</MUILink>
-            </Link>
-          </Box>  
-                <Box component='li' sx={{pr:6, fontFamily:'Poppins'}}>
-                    <Link href="/freelancing" passHref>
-                         <MUILink color='#edecec' underline='hover'
-                         >Freelancing</MUILink>
-                    </Link>
-                </Box>
-                <Box component='li' sx={{pr:6, fontFamily:'Poppins'}}>    
-                    <Link href="/frameworks" passHref>
-                         <MUILink  color='#edecec' underline='hover'>Frameworks/Libraries</MUILink>
-                    </Link>
-                </Box>
-                <Box component='li' sx={{fontFamily:'Poppins'}}>
-                    <Link href="/contact" passHref>
-                         <MUILink color='#edecec' underline='hover' >Css</MUILink>
-                    </Link>
-                </Box>
-            </Grid>
-    </Box>
+      <Header />
           <Box component='article' px={{xs:1, sm: 3, lg:'8rem'}} width={{xs:'97%', sm:'95%', lg:'70%', xl:'70%'}}  m={{lg:'4rem auto', xs:'4rem auto'}} fontFamily='Poppins' lineHeight={1.8}>
             <Typography variant='h4' textAlign='left' component='h1' fontFamily='Poppins' fontWeight={700}>
               {post.attributes.title}

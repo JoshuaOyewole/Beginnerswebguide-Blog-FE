@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from 'next/dist/shared/lib/head'
 import Navbar from '../../components/Navbar2'
-import SlideShow from '../../components/SlideShow'
 import { useMediaQuery, useTheme } from '@mui/material'
 import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 
 export default function Setups(){
     const theme = useTheme();
@@ -16,7 +16,7 @@ export default function Setups(){
                 <meta name='keyword' content='about orisfina Bootcamp' />
             </Head>
         <Navbar isMobile={isMobile} />
-        <SlideShow />  
+        <Header />  
            <h2>Setups  Category</h2>  
            <Footer /> 
         </div>

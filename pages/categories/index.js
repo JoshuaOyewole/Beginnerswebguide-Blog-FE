@@ -2,9 +2,9 @@ import React from 'react'
 import Head from 'next/dist/shared/lib/head'
 import Link from 'next/link'
 import Navbar from '../../components/Navbar2'
-import SlideShow from '../../components/SlideShow'
-import { useMediaQuery, useTheme,Box, Link as MUILink } from '@mui/material'
+import { Typography, useMediaQuery, useTheme,Box, Link as MUILink } from '@mui/material'
 import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 
 export default function Index(){
     const theme = useTheme();
@@ -17,9 +17,11 @@ export default function Index(){
                 <meta name='keyword' content='about orisfina Bootcamp' />
             </Head>
         <Navbar isMobile={isMobile} />
-        <SlideShow />  
-        <Box container sx={{px:'8rem'}}>
-        <h2>Welcome to Categories Section</h2>  
+        <Header/>  
+        <Box component='section' px={{xs:2, sm: 3, lg:'8rem', xl:'16rem'}} my={10}>
+            <Typography variant='h3' textAlign='left' component='h2'  fontWeight={600}>
+              Categories
+            </Typography>
            <Box>
            <Link href="/categories/freelancing" passHref>
               <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', display:'block', py:'.5rem', fontWeight:'600'}}>Freelancing</MUILink>
