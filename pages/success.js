@@ -1,21 +1,21 @@
+import React from 'react'
 import Link from 'next/link'
-import { Box } from '@mui/material'
-import Head from 'next/dist/shared/lib/head'
+import Head from 'next/head'
 import Navbar from '../components/Navbar2'
 import Footer from '../components/FooterSection'
+import {Box,useMediaQuery, useTheme } from '@mui/material'
 
 
-
-export default function success() {
-  // const theme = useTheme();
-  //   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+export default function Success() {
+  const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
 
   return (
     <div>
     <>
         <Head>
-          <title>Beginnerswebguide | About Us </title>
+          <title>Beginnerswebguide | Success </title>
           <meta name='keyword' content='About beginnerswebguide, beginners web tips, web development guide for beginners' />
         </Head>
     </>
