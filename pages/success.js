@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Typography, Box,useMediaQuery, useTheme } from '@mui/material'
+import { Box } from '@mui/material'
 import Head from 'next/dist/shared/lib/head'
 import Navbar from '../components/Navbar2'
 import Footer from '../components/FooterSection'
@@ -7,8 +7,8 @@ import Footer from '../components/FooterSection'
 
 
 export default function success() {
-  const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  // const theme = useTheme();
+  //   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
 
   return (
