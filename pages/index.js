@@ -13,6 +13,7 @@ import NavBar from '../components/Navbar2'
 export default function Index({posts}) {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+    
     const font = createTheme({
       typography: {
         fontFamily: "'Poppins', sans-serif",
