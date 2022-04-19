@@ -25,7 +25,7 @@ export default function Index({posts}) {
         <Head>
             <title>Beginnerswebguide</title>
             <meta name='keyword' content='web dev guide' />
-            <meta name="ahrefs-site-verification" content="012cc9c677088d4b383ea6c510b2e249ee43807120e16e3736beedc5d60d367c"></meta>
+            <meta name="ahrefs-site-verification" content="012cc9c677088d4b383ea6c510b2e249ee43807120e16e3736beedc5d60d367c" />
         </Head>
         
         <NavBar />
