@@ -3,8 +3,8 @@ import Head from 'next/dist/shared/lib/head'
 import Link from 'next/link'
 import Navbar from '../../components/Navbar2'
 import { Typography, useMediaQuery, useTheme,Box, Link as MUILink } from '@mui/material'
-import Footer from '../../components/Footer'
-import Header from '../../components/Header'
+import Footer from '../../components/FooterSection'
+// import Header from '../../components/Header'
 
 export default function Index(){
     const theme = useTheme();
@@ -13,11 +13,11 @@ export default function Index(){
     return (
         <div>
             <Head>
-                <title>Categories| Beginnerwebguide </title>
+                <title>Categories| Beginnerswebguide </title>
                 <meta name='keyword' content='about orisfina Bootcamp' />
             </Head>
         <Navbar isMobile={isMobile} />
-        <Header/>  
+        {/* <Header/>   */}
         <Box component='section' px={{xs:2, sm: 3, lg:'8rem', xl:'16rem'}} my={10}>
             <Typography variant='h3' textAlign='left' component='h2'  fontWeight={600}>
               Categories

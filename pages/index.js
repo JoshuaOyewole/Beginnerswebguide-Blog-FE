@@ -2,7 +2,7 @@ import React from 'react'
 import {Grid,useMediaQuery, useTheme } from '@mui/material'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Head from 'next/head'
-import Footer from '../components/Footer'
+import Footer from '../components/FooterSection'
 import SlideShow from '../components/SlideShow'
 import Main from '../components/Main'
 import Aside from '../components/Aside'
@@ -41,7 +41,9 @@ export default function Index({posts}) {
 // This function gets called at build time
 export async function getStaticProps() {
   // Called my strapi API endpoint to get posts
-  const res = await fetch(`${process.env.API_URL}/api/articles`);
+  // const res = await fetch(`${process.env.API_URL}/api/articles`);
+  const res = await fetch(`https://beginnerswebguide.herokuapp.com/api/articles`);
+
   const Blogposts = await res.json();
 
   // By returning { props: { posts } }, the Blog component will receive `posts` as a prop at build time

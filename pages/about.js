@@ -2,8 +2,9 @@ import React from 'react'
 import Head from 'next/dist/shared/lib/head'
 import Navbar from '../components/Navbar2'
 import { Typography, Box,useMediaQuery, useTheme } from '@mui/material'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import Link from 'next/link'
+import Footer from '../components/FooterSection'
+// import Header from '../components/Header'
 
 export default function About(){
     const theme = useTheme();
@@ -17,16 +18,25 @@ export default function About(){
 
             </Head>
         <Navbar isMobile={isMobile} />
-        <Header />
-        <Box component='section' px={{xs:2, sm: 3, lg:'8rem', xl:'16rem'}} my={10}>
+        {/* <Header /> */}
+        <Box component='section' px={{xs:2, sm: 3, lg:'16rem', xl:'20rem'}} my={10}>
             <Typography variant='h3' textAlign='left' component='h2'  fontWeight={600}>
               About Us
             </Typography>
             <Typography component='p' pt='2rem' >
-                You have a desire to become a web developer? 
+              BeginnersWebGuide is a personal Tech/SEO blog owned and managed by <Link href='https://www.joshuaoyewole.com.ng'><a>Joshua Oyewole</a></Link> .
             </Typography>
             <Typography component='p'>
-             We'll are here to guide you towards achieving your goals and scaling through any bugs during your projects. Whether you're entering as a complete beginner or with little experience, our articles are designed to guides you.
+                I am a freelancer web developer / Content Creator from the ancient city of Edo state, Nigeria. I have a Higher National Diploma (HND) in Computer Science and I have been a web developer for over 3 years plus with dozens of successfully completed projects. 
+            </Typography>
+            <Typography component='p'>
+                Having thought several students at <Link href='https://www.oci.com.ng'><a>Orisfina Computer Institute (Bootcamp)</a></Link> for years, I have been able to understand the chanlleges faced by beginners who are in their early stage of career.
+            </Typography>
+            <Typography component='p'>
+                Experiences gained at <Link href='https://www.oci.com.ng'><a>Orisfina Computer Institute (Bootcamp)</a></Link>  prompted my desire into starting BeginnersWebGuide with the sole aim of sharing contents on chanlleges beginners developers are facing and also explore intermediate / advanced topics. 
+            </Typography>
+            <Typography component='p'>
+                The major aim of BeginnersWebGuide is to bridge the gap between beginners and the ability to find simplified contents. Our contents are well researched and written by experienced writers for your understanding.
             </Typography>
             <Typography component='p'>
                 Our articles ranges from HTML, CSS, Javascript, Frameworks/libraries, Freelancing tips and lots more. 

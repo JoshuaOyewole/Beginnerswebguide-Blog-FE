@@ -8,7 +8,7 @@ import MarkdownIt from 'markdown-it';
 import promoImg from '../public/images/freelance-bundle-podcast.jpg'
 import FooterSection from '../components/FooterSection'
 import BlogPost from '../components/Card'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 
 export default function Post({post}) {
 const md = new MarkdownIt();
@@ -21,7 +21,7 @@ const htmlContent = md.render(post.attributes.content);
                 <meta name='keyword' content='about orisfina Bootcamp' />
             </Head>
       <NavBar />
-      <Header />
+      {/* <Header /> */}
           <Box component='article' px={{xs:1, sm: 3, lg:'8rem'}} width={{xs:'97%', sm:'95%', lg:'70%', xl:'70%'}}  m={{lg:'4rem auto', xs:'4rem auto'}} fontFamily='Poppins' lineHeight={1.8}>
             <Typography variant='h4' textAlign='left' component='h1' fontFamily='Poppins' fontWeight={700}>
               {post.attributes.title}
@@ -101,7 +101,7 @@ const htmlContent = md.render(post.attributes.content);
 
 export async function getStaticProps({params}) {
   // Called my strapi API endpoint to get posts
-  const res = await fetch(`${process.env.API_URL}/api/slugify/slugs/article/${params.slug}`);
+  const res = await fetch(`https://beginnerswebguide.herokuapp.com/api/slugify/slugs/article/${params.slug}`);
 
   const Blogposts = await res.json();
   // By returning { props: { posts } }, the Blog component will receive `posts` as a prop at build time
@@ -114,7 +114,7 @@ export async function getStaticProps({params}) {
 
 
 export async function getStaticPaths(){
-  const res = await fetch(`${process.env.API_URL}/api/articles`)
+  const res = await fetch(`https://beginnerswebguide.herokuapp.com/api/articles`)
   const Blogposts = await res.json()
 
     const paths = Blogposts.data.map((post) =>{

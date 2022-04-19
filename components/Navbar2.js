@@ -54,9 +54,6 @@ const Header = () => {
               </Tabs> */}
               <Tabs
                 sx={{ marginLeft: "auto", justifyContent:'center', color:'#000', alignItems:'center' }}
-                indicatorColor="secondary" 
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
               >
                   <Link href="/" passHref>
                          <MUILink color='#000' underline='hover' sx={{fontFamily:'Montserrat', textTransform:'uppercase', display:'inline-block', 
