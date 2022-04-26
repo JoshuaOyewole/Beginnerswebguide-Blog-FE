@@ -13,20 +13,20 @@ import NavBar from '../components/Navbar2'
 export default function Index({posts}) {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-    
+
     const font = createTheme({
       typography: {
         fontFamily: "'Poppins', sans-serif",
         fontSize: 16
       },
     });
-    
+    console.log(process.env.URL_API);
   return (
     <ThemeProvider theme={font}>
         <Head>
             <title>Beginnerswebguide</title>
-            <meta name='keyword' content='web dev guide' />
-            <meta name="ahrefs-site-verification" content="012cc9c677088d4b383ea6c510b2e249ee43807120e16e3736beedc5d60d367c" />
+            <meta name="description" content="BeginnersWebGuide is birthed to bridge the gap between beginners inability to find simplified web development contents" />
+            <meta name='keyword' content='Web Development, Web Development Projects, CSS, Javascript' />
         </Head>
         
         <NavBar />
@@ -44,7 +44,7 @@ export default function Index({posts}) {
 export async function getStaticProps() {
   // Called my strapi API endpoint to get posts
   // const res = await fetch(`${process.env.API_URL}/api/articles`);
-  const res = await fetch(`https://beginnerswebguide.herokuapp.com/api/articles`);
+  const res = await fetch(`https://localhost:1337/api/articles`);
 
   const Blogposts = await res.json();
 

@@ -19,7 +19,7 @@ export default function Freelancing(){
         </>
             <Navbar isMobile={isMobile} />
             <Header />  
-           <h2>Freelancing Page</h2>  
+           <h1>Freelancing Page</h1>  
            <Footer /> 
             </>
     )

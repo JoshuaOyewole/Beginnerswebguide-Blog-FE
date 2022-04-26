@@ -19,7 +19,7 @@ export default function Index(){
         <Navbar isMobile={isMobile} />
         {/* <Header/>   */}
         <Box component='section' px={{xs:2, sm: 3, lg:'8rem', xl:'16rem'}} my={10}>
-            <Typography variant='h3' textAlign='left' component='h2'  fontWeight={600}>
+            <Typography variant='h3' textAlign='left' component='h1'  fontWeight={600}>
               Categories
             </Typography>
            <Box>

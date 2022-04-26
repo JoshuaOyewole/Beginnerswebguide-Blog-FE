@@ -18,7 +18,7 @@ export default function WebdevGuides(){
             </Head>
         <Navbar isMobile={isMobile} />
         <Header />  
-           <h2>Web Dev Guides Category Category</h2>  
+           <h1>Web Dev Guides Category Category</h1>  
            <Footer /> 
         </div>
     )

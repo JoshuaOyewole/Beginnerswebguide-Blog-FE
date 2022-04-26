@@ -17,7 +17,7 @@ export default function Setups(){
             </Head>
         <Navbar isMobile={isMobile} />
         <Header />  
-           <h2>Setups  Category</h2>  
+           <h1>Setups  Category</h1>  
            <Footer /> 
         </div>
     )

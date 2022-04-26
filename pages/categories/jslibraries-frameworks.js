@@ -17,7 +17,7 @@ export default function JslibrariesFrameworks(){
             </Head>
         <Navbar isMobile={isMobile} />
         <Header />  
-           <h2>Javascript Libraries/Framworks Category</h2>  
+           <h1>Javascript Libraries/Framworks Category</h1>  
            <Footer /> 
         </div>
     )

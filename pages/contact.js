@@ -19,7 +19,7 @@ export default function Contact(){
         <Navbar isMobile={isMobile} />
         {/* <Header />   */}
         <Box component='section' px={{xs:2, sm: 3, lg:'16rem', xl:'20rem'}} my={10}>
-            <Typography variant='h3' textAlign='left' component='h2'  fontWeight={600}>
+            <Typography variant='h3' textAlign='left' component='h1'  fontWeight={600}>
               Contact us
             </Typography>
             <Typography component='p' pt='3rem' >

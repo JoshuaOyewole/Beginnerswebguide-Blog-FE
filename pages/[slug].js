@@ -101,7 +101,7 @@ const htmlContent = md.render(post.attributes.content);
 
 export async function getStaticProps({params}) {
   // Called my strapi API endpoint to get posts
-  const res = await fetch(`https://beginnerswebguide.herokuapp.com/api/slugify/slugs/article/${params.slug}`);
+  const res = await fetch(`process.env.URL_API/api/slugify/slugs/article/${params.slug}`);
 
   const Blogposts = await res.json();
   // By returning { props: { posts } }, the Blog component will receive `posts` as a prop at build time
@@ -114,7 +114,7 @@ export async function getStaticProps({params}) {
 
 
 export async function getStaticPaths(){
-  const res = await fetch(`https://beginnerswebguide.herokuapp.com/api/articles`)
+  const res = await fetch(`process.env.URL_API/api/articles`)
   const Blogposts = await res.json()
 
     const paths = Blogposts.data.map((post) =>{
