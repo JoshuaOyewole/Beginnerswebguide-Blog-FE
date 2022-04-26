@@ -1,7 +1,4 @@
 import React from 'react'
-// import Card from '@mui/material/Card';
-// import CardContent from '@mui/material/CardContent';
-// import CardMedia from '@mui/material/CardMedia';
 import {Card, CardContent, CardMedia, Button, CardActionArea, CardActions,Typography,Grid} from '@mui/material';
 import Link from 'next/link'
 
@@ -14,8 +11,8 @@ export default function BlogCard({isMobile,post}) {
         <CardMedia
           component="img"
           height="140"
-          image= {`process.env.URL_API${post.attributes.imageURL}`}   //{post.attributes.imageURL}
-          alt="green iguana"
+          image= {`https://beginnerswebguide.herokuapp.com${post.attributes.imageURL}`}   //{post.attributes.imageURL}
+          alt={`${post.attributes.slug}`}
         />
         <CardContent>
             <Link href={`/${post.attributes.slug}`} passHref>

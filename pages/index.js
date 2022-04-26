@@ -20,7 +20,6 @@ export default function Index({posts}) {
         fontSize: 16
       },
     });
-    console.log(process.env.URL_API);
   return (
     <ThemeProvider theme={font}>
         <Head>
@@ -44,7 +43,7 @@ export default function Index({posts}) {
 export async function getStaticProps() {
   // Called my strapi API endpoint to get posts
   // const res = await fetch(`${process.env.API_URL}/api/articles`);
-  const res = await fetch(`https://localhost:1337/api/articles`);
+  const res = await fetch(`https://beginnerswebguide.herokuapp.com/api/articles`);
 
   const Blogposts = await res.json();
 
