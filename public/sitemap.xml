@@ -10,52 +10,8 @@
 <url>
   <loc>https://beginnerswebguide.com/</loc>
   <lastmod>2022-04-27T00:48:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://beginnerswebguide.com/categories</loc>
-  <lastmod>2022-04-27T00:48:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://beginnerswebguide.com/about</loc>
-  <lastmod>2022-04-27T00:48:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://beginnerswebguide.com/contact</loc>
-  <lastmod>2022-04-27T00:48:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://beginnerswebguide.com/categories/webdevguides</loc>
-  <lastmod>2022-04-27T00:48:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://beginnerswebguide.com/categories/jslibraries-frameworks</loc>
-  <lastmod>2022-04-27T00:48:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://beginnerswebguide.com/categories/freelancing</loc>
-  <lastmod>2022-04-27T00:48:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://beginnerswebguide.com/categories/setups</loc>
-  <lastmod>2022-04-27T00:48:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://beginnerswebguide.com/privacy-policies</loc>
-  <lastmod>2022-04-27T00:48:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://beginnerswebguide.com/terms-condition</loc>
-  <lastmod>2022-04-27T00:48:03+00:00</lastmod>
-  <priority>0.80</priority>
 </url>
 
 
