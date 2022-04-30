@@ -17,8 +17,9 @@ const htmlContent = md.render(post.attributes.content);
   return (
     <>
     <Head>
-                <title>{post.attributes.title} | beginnerswebguide.com</title>
-                <meta name='keyword' content='about orisfina Bootcamp' />
+                <title>{post.attributes.metaTitle} | beginnerswebguide.com</title>
+                <meta name="description" content={post.attributes.metaDescription}/>
+                <meta name='keyword' content={post.attributes.keyword} />
             </Head>
       <NavBar />
       {/* <Header /> */}

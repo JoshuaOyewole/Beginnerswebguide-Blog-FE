@@ -23,8 +23,10 @@ export default function Index({posts}) {
   return (
     <ThemeProvider theme={font}>
         <Head>
-            <title>Beginnerswebguide</title>
+            <meta charset="UTF-8" />
+            <title>Beginnerswebguide | Simplified guide for web developers</title>
             <meta name="description" content="BeginnersWebGuide is birthed to bridge the gap between beginners inability to find simplified web development contents" />
+            <meta name="robots" content="index, follow" />
             <meta name='keyword' content='Web Development, Web Development Projects, CSS, Javascript' />
         </Head>
         
