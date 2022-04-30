@@ -11,7 +11,9 @@ import BlogPost from '../components/Card'
 // import Header from '../components/Header'
 
 export default function Post({post}) {
-const md = new MarkdownIt();
+const md = new MarkdownIt({
+  html:true
+});
 const htmlContent = md.render(post.attributes.content);
 
   return (
