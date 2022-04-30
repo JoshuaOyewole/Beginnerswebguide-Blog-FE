@@ -28,7 +28,7 @@
 }
 @media (max-width:600px) {
     .slideshow{
-        background-image: url('../public/images/moroccan-flower-dark-small.png');
+        background-image: url('../public/images/moroccan-flower-dark-small.jpg');
         padding: .8rem;
         margin-top: 1rem;
     }

@@ -1,6 +1,7 @@
 import React from 'react'
-import {Card, CardContent, CardMedia, Button, CardActionArea, CardActions,Typography,Grid} from '@mui/material';
+import {Card, CardContent, Button, CardActionArea, CardActions,Typography,Grid} from '@mui/material';
 import Link from 'next/link'
+import  Image from 'next/image'
 
 export default function BlogCard({isMobile,post}) {
 
@@ -8,10 +9,10 @@ export default function BlogCard({isMobile,post}) {
 <Grid item xs={12} sm={6}>
     <Card >
       <CardActionArea>
-        <CardMedia
-          component="img"
+        <Image
           height="140"
-          image= {`https://beginnerswebguide.herokuapp.com${post.attributes.imageURL}`}   //{post.attributes.imageURL}
+          width="300"
+          src= {`${post.attributes.imageURL}`}   //{post.attributes.imageURL}
           alt={`${post.attributes.slug}`}
         />
         <CardContent>
@@ -31,7 +32,7 @@ export default function BlogCard({isMobile,post}) {
           <Link href={`/${post.attributes.slug}`} passHref>
               <a>
                 <Button size="small" color="primary" >
-                    Read More
+                    Read Article
                 </Button>
               </a>
           </Link>
