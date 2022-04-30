@@ -10,8 +10,8 @@ export default function BlogCard({isMobile,post}) {
     <Card >
       <CardActionArea>
         <Image
-          height="140"
-          width="300"
+          height="200"
+          width="400"
           src= {`${post.attributes.imageURL}`}   //{post.attributes.imageURL}
           alt={`${post.attributes.slug}`}
         />

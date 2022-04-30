@@ -5,7 +5,7 @@ import Head from 'next/dist/shared/lib/head'
 import Image from 'next/image'
 import NavBar from '../components/Navbar2'
 import MarkdownIt from 'markdown-it';
-import promoImg from '../public/images/freelance-bundle-podcast.jpg'
+import promoImg from '../public/images/complete-freelancing-bundle-overview.png'
 import FooterSection from '../components/FooterSection'
 import BlogPost from '../components/Card'
 // import Header from '../components/Header'
